@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/iconDetBook"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/kids" />
+
+    <TextView
+        android:id="@+id/nameBookDet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="brooooo"
+        android:layout_margin="20dp"
+        android:textColor="@color/egg_plant"/>
+    </LinearLayout>
+
+   <!-- <TextView
+        android:id="@+id/bookDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="brooooo"
+        android:layout_margin="5dp"
+        android:textColor="@color/egg_plant"/>-->
+
+</LinearLayout>

@@ -1,0 +1,486 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/bg_profile">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/taylor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="taylor Swift"
+            android:textColor="@color/sand"
+            android:color="@color/sand"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:id="@+id/username_profile"
+            android:text="Taylor Swift"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageView1" />
+
+        <ImageView
+            android:id="@+id/imgEdit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            tools:src="@drawable/edit"
+            android:layout_below="@+id/imageView1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layoutRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/two_">
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/username_layout"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/sand"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/txtFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/grey_500"
+                        android:textSize="@dimen/text_size_13_74"
+                        tools:visibility="visible"
+                        tools:text="Username  " />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/shel"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="1dp"
+                        android:paddingTop="3dp"
+                        android:id="@+id/one">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/profile_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1.0"
+                                android:clickable="false"
+                                android:textColor="@color/grey_500"
+                                android:textSize="@dimen/text_size_medium"
+                                tools:text="Username" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="41dp"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:textColor="@color/grey_500"
+                                android:textSize="@dimen/text_size_micro"
+                                android:drawableLeft="@drawable/ic_profile"
+                                android:drawableTint="#FF4081"
+                                android:hint="username"
+                                android:inputType="text"
+                                android:id="@+id/et_username" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/margin_divider0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/grey_500"
+                android:visibility="visible" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/one_">
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/fn_layout"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/sand"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/fn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/grey_500"
+                        android:textSize="@dimen/text_size_13_74"
+
+                        tools:visibility="visible"
+                        tools:text="First Name  " />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/shel"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="1dp"
+                        android:paddingTop="5dp"
+                        android:id="@+id/two">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/profile_fn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1.0"
+                                android:clickable="false"
+                                android:textColor="@color/grey_500"
+                                android:textSize="@dimen/text_size_medium"
+                                tools:text="First Name" />
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="41dp"
+                                android:layout_marginBottom="4dp"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:textColor="@color/grey_500"
+                                android:textSize="@dimen/text_size_micro"
+                                android:drawableLeft="@drawable/ic_profile"
+                                android:drawableTint="#FF4081"
+                                android:hint="first name"
+                                android:inputType="text"
+                                android:id="@+id/et_fn" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/margin_divider2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/grey_50"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/margin_divider00"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/grey_500"
+                android:visibility="visible" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/three_">
+
+                <LinearLayout
+                    android:id="@+id/ln_layout"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/sand"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/ln"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/grey_500"
+                        android:textSize="@dimen/text_size_13_74"
+
+                        tools:visibility="visible"
+                        tools:text="Last Name  " />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/shel"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="1dp"
+                        android:paddingTop="3dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/profile_ln"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginRight="8dp"
+                                android:clickable="false"
+                                android:layout_weight="1.0"
+                                android:textColor="@color/grey_500"
+                                android:textSize="@dimen/text_size_medium"
+                                tools:text="Last Name" />
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="41dp"
+                                android:layout_marginBottom="4dp"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:textColor="@color/grey_500"
+                                android:textSize="@dimen/text_size_micro"
+                                android:drawableLeft="@drawable/ic_profile"
+                                android:drawableTint="#FF4081"
+                                android:hint="last name"
+                                android:inputType="text"
+                                android:id="@+id/et_ln" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:id="@+id/margin_divider000"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/grey_500"
+                android:visibility="visible" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/four">
+
+                <LinearLayout
+                    android:id="@+id/dob_layout"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/sand"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/profile_dob1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/grey_500"
+                        android:textSize="@dimen/text_size_13_74"
+                        tools:visibility="visible"
+                        tools:text="Date of Birth  " />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/shel"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="1dp"
+                        android:paddingTop="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/profile_dob"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1.0"
+                                android:clickable="false"
+                                android:textColor="@color/grey_500"
+                                android:textSize="@dimen/text_size_medium"
+                                tools:text="First Name" />
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="41dp"
+                                android:layout_marginBottom="4dp"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:textColor="@color/grey_500"
+                                android:textSize="@dimen/text_size_micro"
+                                android:drawableLeft="@drawable/ic_profile"
+                                android:drawableTint="#FF4081"
+                                android:hint="dob"
+                                android:inputType="text"
+                                android:id="@+id/et_dob" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/margin_divider4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/grey_50"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/margin_divider0000"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/grey_500"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@color/trans_grape"
+        android:text="@string/save_profile"
+        android:textAllCaps="false"
+        android:textColor="@color/shel"
+        android:textSize="18sp"
+        android:id="@+id/btn_save_prop"
+        android:layout_gravity="right" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"></LinearLayout>
+</LinearLayout>
+
